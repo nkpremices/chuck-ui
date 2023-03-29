@@ -6,6 +6,7 @@ import CategoryList from '../Categories/CategoryList';
 import Header from '../Header';
 import Hero from '../Hero';
 import JokeDetailsModal from '../Jokes/JokeDetailsModal';
+import Footer from '../Footer';
 
 const Home = () => {
   const { data: categories, loading: categoriesLoading } = useQuery(
@@ -20,6 +21,7 @@ const Home = () => {
       <Hero />
       <CategoryList />
       <JokeDetailsModal />
+      <Footer />
     </div>
   );
 };
