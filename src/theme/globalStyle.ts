@@ -16,6 +16,7 @@ export default createGlobalStyle`
     color: ${theme.colors.black};
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
+    background: rgb(242 236 225);
   }
 
   .prevent-scrolling {

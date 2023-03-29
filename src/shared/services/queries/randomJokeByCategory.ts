@@ -8,7 +8,9 @@ export const GET_RANDOM_JOKE_BY_CATEGORY = {
     query ${queryName}(
       $category: String!
     ) {
-      ${queryName} {
+      ${queryName}(
+        category: $category
+      ) {
         id
         value
         iconUrl

@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-  background-color: #2196f3;
+  background-color: rgb(242 236 225);
   color: #fff;
   height: 64px;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid #fff;
 
   .logo-container {
     display: flex;

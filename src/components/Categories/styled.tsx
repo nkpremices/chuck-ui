@@ -8,11 +8,9 @@ export const StyledCategoryDetails = styled.div`
   width: 300px;
   height: 300px;
   background-color: #fff;
-  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {
     cursor: pointer;
@@ -55,6 +53,18 @@ export const StyledCategoryList = styled.div`
 `;
 
 export const StyledCategoryTitle = styled.h3`
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
+  background: rgb(236 227 214);
+  color: rgb(19 47 85);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: normal;
+`;
+
+export const CategoryListSpinnerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
 `;

@@ -1,18 +1,38 @@
 import { useQuery } from '@apollo/client';
 import { queries } from '../../shared/services';
 import CategoryDetails from './CategoryDetails';
-import { StyledCategoryList } from './styled';
+import { CategoryListSpinnerContainer, StyledCategoryList } from './styled';
 import { get } from 'lodash';
+import { BallTriangle } from 'react-loader-spinner';
+
+const Spinner = () => (
+  <BallTriangle
+    height={100}
+    width={100}
+    radius={5}
+    color="#2196f3"
+    ariaLabel="ball-triangle-loading"
+    wrapperClass=""
+    wrapperStyle={{}}
+    visible={true}
+  />
+);
 
 const CategoryList = () => {
   const { data, loading, error } = useQuery(
     queries.GET_ALL_CATEGORIES.queryBody,
   );
 
-  const categories = get(data, queries.GET_ALL_CATEGORIES.queryName, []);
+  if (loading)
+    return (
+      <CategoryListSpinnerContainer>
+        <Spinner />
+      </CategoryListSpinnerContainer>
+    );
 
-  if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
+
+  const categories = get(data, queries.GET_ALL_CATEGORIES.queryName, []);
 
   return (
     <StyledCategoryList>
