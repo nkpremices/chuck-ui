@@ -5,6 +5,7 @@ import {
   InMemoryCache,
 } from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
+import fetch from 'cross-fetch';
 
 /**
  * Apollo client configuration inspired from the following refs:
@@ -38,6 +39,6 @@ export const client = new ApolloClient({
         });
       }
     }),
-    new HttpLink({ uri: `${import.meta.env.VITE_GRAPHQL_URL}/graphql` }),
+    new HttpLink({ uri: `${process.env.VITE_GRAPHQL_URL}/graphql`, fetch }),
   ]),
 });
