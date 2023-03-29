@@ -1,0 +1,10 @@
+{
+  "infiniteLoopProtection": true,
+  "hardReloadOnChange": false,
+  "template": "node",
+  "view": "terminal",
+  "container": {
+    "node": "18.15.0"
+  },
+  "node": "18.15.0"
+}
