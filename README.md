@@ -18,7 +18,7 @@
 
 * Clone the repo using
 
-```git clone https://github.com/nkpremices/sov-test-server.git```
+```git clone https://github.com/nkpremices/sov-test-ui.git```
 
 * Install dependecies by runing
 
@@ -34,3 +34,10 @@
 ### 3. Steps for running tests
 
 * After installation and previewing the app, run ```yarn  test``` 
+
+
+## Other Links
+
+* The server repo can be found [here](https://github.com/nkpremices/sov-test-server)
+* The server is deployed live at this link [here](https://chuck-norris-jokes-funb.onrender.com)
+* The client is deployed live at this link [here](https://chuck-ui.netlify.app/)
