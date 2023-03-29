@@ -6,8 +6,6 @@
 * TypeScript
 * React (LTS)
 * Apollo Client (react-apollo)
-* Apollo Server
-* NodeJS (LTS)
 * Centralised state management (Redux/Context API ) any state management framework/tool can be used
 * Centralised store must be immutable and make use of the Action/Reducer pattern
 * Can use a boilerplate of your choice
