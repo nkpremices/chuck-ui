@@ -1,16 +1,13 @@
-# Chuck
+# Chuck - UI
 
-## Project development steps/requirements
 
-### Steps(Requirements)
+
+### Stack
 * TypeScript
 * React (LTS)
 * Apollo Client (react-apollo)
-* Centralised state management (Redux/Context API ) any state management framework/tool can be used
-* Centralised store must be immutable and make use of the Action/Reducer pattern
-* Can use a boilerplate of your choice
-* Solution should be checked into a public Github repo. Additionally the README should outline all necessary steps required to bootstrap the code
-* Solution can be implemented in CodeSandbox or similar
+* Centralised state management (Redux/Context API )
+* Centralised store with use of the Action/Reducer pattern
 
 ## Getting started
 
@@ -38,6 +35,6 @@
 
 ## Other Links
 
-* The server repo can be found [here](https://github.com/nkpremices/sov-test-server)
+* The server repo can be found [here](https://github.com/nkpremices/chuck-server)
 * The server is deployed live at this link [here](https://chuck-norris-jokes-funb.onrender.com)
 * The client is deployed live at this link [here](https://chuck-ui.netlify.app/)
